@@ -1,0 +1,552 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>排名</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <link rel="stylesheet" href="../assets/style/weui.css"/>
+    <link rel="stylesheet" href="../assets/style/weui2.css"/>
+    <link rel="stylesheet" href="../assets/style/weui3.css"/>
+    <link rel="stylesheet" href="../assets/style/jx-style.css"/>
+    <link rel="stylesheet" href="../assets/style/style.css"/>
+</head>
+<body ontouchstart class="page-bg">
+<div class="weui-header bg-white header-position-fixed">
+    <div class="weui-header-left"><a href="../home.html" class="icon icon-109 icon-back"></a></div>
+    <h1 class="weui-header-title  f-black">排名</h1>
+    <div class="weui-header-right"><i id="ms4" class="icon icon-4 icon-back"></i></div>
+    <div class="weui_tab ui-tab weui-border-t" id="tab1">
+        <div class="weui_navbar bg-white">
+            <div class="weui_navbar_item ui-tab-item" id="1">
+                男(man)
+            </div>
+            <div class="weui_navbar_item ui-tab-item" id="2">
+                女(women)
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="content has-top-tab">
+    <div class="ui-tab-body" id="tab-item1">
+        <div class="jx_panel_warp ranking">
+            <div class="weui_panel">
+                <div class="weui_panel_bd">
+                    <div class="weui_media_box weui_media_small_appmsg">
+                        <div class="weui_cells weui_cells_access">
+                            <style>
+
+                            </style>
+                            <a href="javascript:;" class="weui_cell" onclick="selectmenu('1');">
+                                <div class="weui_cell_hd">
+                                    <div class="rank first">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    (总积分) 姓名
+                                </div>
+                                <span id="cell_1" class="icon icon-74 "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;" id="menu_1">
+                    <div class="weui_cells weui_cells_access score">
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel">
+                <div class="weui_panel_bd">
+                    <div class="weui_media_box weui_media_small_appmsg">
+                        <div class="weui_cells weui_cells_access">
+                            <a href="javascript:;" class="weui_cell" onclick="selectmenu('2');">
+                                <div class="weui_cell_hd">
+                                    <div class="rank second">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">(总积分) 姓名
+                                </div>
+                                <span id="cell_2" class="icon icon-74 "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;" id="menu_2">
+                    <div class="weui_cells weui_cells_access score">
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="weui_panel">
+                <div class="weui_panel_bd">
+                    <div class="weui_media_box weui_media_small_appmsg">
+                        <div class="weui_cells weui_cells_access">
+                            <a href="javascript:;" class="weui_cell" onclick="selectmenu('3');">
+                                <div class="weui_cell_hd">
+                                    <div class="rank third">
+                                        3
+                                    </div>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    (总积分) 姓名
+                                </div>
+                                <span id="cell_3" class="icon icon-74 "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: none;" id="menu_3">
+                    <div class="weui_cells weui_cells_access score">
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel">
+                <div class="weui_panel_bd">
+                    <div class="weui_media_box weui_media_small_appmsg">
+                        <div class="weui_cells weui_cells_access">
+                            <a href="javascript:;" class="weui_cell" onclick="selectmenu('4');">
+                                <div class="weui_cell_hd">
+                                    <div class="rank">
+                                        4
+                                    </div>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    (总积分) 姓名
+                                </div>
+                                <span id="cell_4" class="icon icon-74 "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;" id="menu_4">
+                    <div class="weui_cells weui_cells_access score">
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel">
+                <div class="weui_panel_bd">
+                    <div class="weui_media_box weui_media_small_appmsg">
+                        <div class="weui_cells weui_cells_access">
+                            <a href="javascript:;" class="weui_cell" onclick="selectmenu('5');">
+                                <div class="rank">
+                                    55555
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    (总积分) 姓名
+
+                                </div>
+                                <span id="cell_5" class="icon icon-74 "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;" id="menu_5">
+                    <div class="weui_cells weui_cells_access score">
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel">
+                <div class="weui_panel_bd">
+                    <div class="weui_media_box weui_media_small_appmsg">
+                        <div class="weui_cells weui_cells_access">
+                            <a href="javascript:;" class="weui_cell" onclick="selectmenu('6');">
+                                <div class="rank">
+                                    777777777
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    (总积分) 姓名姓名姓名姓名姓名姓名姓名姓名姓名姓名姓名
+                                </div>
+                                <span id="cell_6" class="icon icon-74 "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;" id="menu_6">
+                    <div class="weui_cells weui_cells_access score">
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui-tab-body hide" id="tab-item2">
+        <div class="jx_panel_warp ranking">
+            <div class="weui_panel">
+                <div class="weui_panel_bd">
+                    <div class="weui_media_box weui_media_small_appmsg">
+                        <div class="weui_cells weui_cells_access">
+                            <a href="javascript:;" class="weui_cell" onclick="selectmenu('11');">
+                                <div class="weui_cell_hd">
+                                    <div class="rank first">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    (总积分) 姓名
+                                </div>
+                                <span id="cell_11" class="icon icon-74 "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;" id="menu_11">
+                    <div class="weui_cells weui_cells_access score">
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel">
+                <div class="weui_panel_bd">
+                    <div class="weui_media_box weui_media_small_appmsg">
+                        <div class="weui_cells weui_cells_access">
+                            <a href="javascript:;" class="weui_cell" onclick="selectmenu('22');">
+                                <div class="weui_cell_hd">
+                                    <div class="rank second">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">(总积分) 姓名
+                                </div>
+                                <span id="cell_22" class="icon icon-74 "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;" id="menu_22">
+                    <div class="weui_cells weui_cells_access score">
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="weui_panel">
+                <div class="weui_panel_bd">
+                    <div class="weui_media_box weui_media_small_appmsg">
+                        <div class="weui_cells weui_cells_access">
+                            <a href="javascript:;" class="weui_cell" onclick="selectmenu('33');">
+                                <div class="weui_cell_hd">
+                                    <div class="rank third">
+                                        3
+                                    </div>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    (总积分) 姓名
+                                </div>
+                                <span id="cell_33" class="icon icon-74 "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: none;" id="menu_33">
+                    <div class="weui_cells weui_cells_access score">
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel">
+                <div class="weui_panel_bd">
+                    <div class="weui_media_box weui_media_small_appmsg">
+                        <div class="weui_cells weui_cells_access">
+                            <a href="javascript:;" class="weui_cell" onclick="selectmenu('44');">
+                                <div class="weui_cell_hd">
+                                    <div class="rank">
+                                        4
+                                    </div>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    (总积分) 姓名
+                                </div>
+                                <span id="cell_44" class="icon icon-74 "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;" id="menu_44">
+                    <div class="weui_cells weui_cells_access score">
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel">
+                <div class="weui_panel_bd">
+                    <div class="weui_media_box weui_media_small_appmsg">
+                        <div class="weui_cells weui_cells_access">
+                            <a href="javascript:;" class="weui_cell" onclick="selectmenu('55');">
+                                <div class="rank">
+                                    55555
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    (总积分) 姓名
+
+                                </div>
+                                <span id="cell_55" class="icon icon-74 "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;" id="menu_55">
+                    <div class="weui_cells weui_cells_access score">
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel">
+                <div class="weui_panel_bd">
+                    <div class="weui_media_box weui_media_small_appmsg">
+                        <div class="weui_cells weui_cells_access">
+                            <a href="javascript:;" class="weui_cell" onclick="selectmenu('66');">
+                                <div class="rank">
+                                    777777777
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    (总积分) 姓名姓名姓名姓名姓名姓名姓名姓名姓名姓名姓名
+                                </div>
+                                <span id="cell_66" class="icon icon-74 "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;" id="menu_66">
+                    <div class="weui_cells weui_cells_access score">
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                        <a href="video.html" class="weui_cell " >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>Round 1：1，（参数1，参数2）</p>
+                            </div>
+                            <div class="weui_cell_ft"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="weui_msg_img hide" id="msg4">
+    <div class="weui_msg_com">
+        <div onclick="$('#msg4').fadeOut();" class="weui_msg_close"><i class="icon icon-95"></i></div>
+        <div class="weui_msg_src">
+            <div class="text" style="background: #ffffff;font-size: 1rem">
+                <form action="">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <div>赛事名称/ Event name:</div>
+                            <input class="weui_input" type="text" placeholder="请选择赛事名称" value="" id='text1'/>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <div>隶属场馆/ Affiliated Club:</div>
+                            <input class="weui_input" type="text" placeholder="请选择隶属场馆" value="" id='text2'/>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <div>所在国家/Host country:</div>
+                            <input class="weui_input" type="text" placeholder="请选择所在国家" value="" id='text3'/>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <div>姓名/Full name:
+                            </div>
+                            <input class="weui_input" type="text" placeholder="请填写姓名" value="" id=''/>
+                        </div>
+                    </div>
+                    <div class="weui_cell ui-text-center">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input type="reset" value="清空搜索" onclick="$('#msg4').fadeOut();"
+                                   class="jx_btn bg-blue2-b weui_btn_inline">
+                            <input type="submit" value="搜索" onclick="$('#msg4').fadeOut();"
+                                   class="jx_btn weui_btn_blue weui_btn_inline">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/zepto.min.js"></script>
+<script src="../assets/js/picker.js"></script>
+<script src="../assets/javascripts/picker-city.js"></script>
+<script src="../assets/javascripts/picker-country.js"></script>
+<script src="../assets/javascripts/app.js"></script>
+<script>
+    $(function () {
+        $('#tab1').tab({defaultIndex: 0, activeClass: "tab-blue2"});
+        $(".ui-tab-item").click(function () {
+            var id = $(this).attr("id");
+            $(".ui-tab-body").addClass("hide");
+            $("#tab-item" + id).removeClass("hide");
+        })
+
+        $("#text1").picker({
+            title: "赛事名称",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['crossfit', 'crossfit'],
+                    displayValues: ['crossfit', 'crossfit'],
+                }
+            ]
+        });
+        $("#text2").picker({
+            title: "隶属场馆",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['所有场馆', 'crossfit'],
+                    displayValues: ['所有场馆', 'crossfit'],
+                }
+            ]
+        });
+
+        $('#ms4').click(function () {
+            $('#msg4').fadeIn();
+        })
+
+    });
+</script>
+
+</div>
+</body>
+</html>

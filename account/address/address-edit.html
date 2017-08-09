@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>收货地址</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <link rel="stylesheet" href="../../assets/style/weui.css"/>
+    <link rel="stylesheet" href="../../assets/style/weui2.css"/>
+    <link rel="stylesheet" href="../../assets/style/weui3.css"/>
+    <link rel="stylesheet" href="../../assets/style/jx-style.css"/>
+    <link rel="stylesheet" href="../../assets/style/style.css"/>
+
+</head>
+<body ontouchstart class="page-bg">
+<div class="weui-header bg-white header-position-fixed weui-border-b">
+    <div class="weui-header-left"><a href="addresses.html" class="icon icon-109 f-black"></a></div>
+    <h1 class="weui-header-title  f-black">收货地址</h1>
+</div>
+<div class="content">
+    <form id="form" class="register-form">
+        <div class="weui_cells_title">收货人 Consignee</div>
+        <div class="weui_cells">
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" placeholder="请填写姓名" type="text">
+                </div>
+            </div>
+
+        </div>
+        <div class="weui_cells_title">联系电话 Contact number</div>
+        <div class="weui_cells">
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" placeholder="填写收货人电话" type="number">
+                </div>
+            </div>
+        </div>
+        <div class="weui_cells_title">收货地址 Delivery address</div>
+        <div class="weui_cells">
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" placeholder="请选择居住区域" value="" id='ssx'/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" placeholder="请输入详细地址" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="weui_cells_title"> 固定电话（选填）</div>
+        <div class="weui_cells">
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" placeholder="填写固定电话" type="number">
+                </div>
+            </div>
+        </div>
+
+        <div class="weui_cells_title">邮政编码（选填）</div>
+        <div class="weui_cells">
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" placeholder="填写邮政编码" type="number">
+                </div>
+            </div>
+        </div>
+
+        <div class="weui_btn_area">
+            <a href="addresses.html" class="jx_btn weui_btn_blue">保存</a>
+        </div>
+        <div class="weui_cells_title" style="height:45px;">&nbsp;</div>
+    </form>
+</div>
+<script src="../../assets/js/zepto.min.js"></script>
+<script src="../../assets/js/picker.js"></script>
+<script src="../../assets/javascripts/picker-city.js"></script>
+<script src="../../assets/javascripts/picker-country.js"></script>
+<script src="../../assets/javascripts/app.js"></script>
+<script>
+    $(function () {
+        $("#text2").picker({
+            title: "性别",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['男', '女'],
+                    displayValues: ['男', '女'],
+                }
+            ]
+        });
+
+        $("#text4").picker({
+            title: "血型",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['A型', 'B型'],
+                    displayValues: ['A型', 'B型'],
+                }
+            ]
+        });
+        $("#text5").picker({
+            title: "证件类型",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['身份证', '护照'],
+                    displayValues: ['身份证', '护照'],
+                }
+            ]
+        });
+        $("#text6").picker({
+            title: "衣码",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['160', '170'],
+                    displayValues: ['160', '170'],
+                }
+            ]
+        });
+        $("#text7").picker({
+            title: "裤码",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['160', '170'],
+                    displayValues: ['160', '170'],
+                }
+            ]
+        });
+        $("#text8").picker({
+            title: "鞋码",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['39', '40'],
+                    displayValues: ['39', '40'],
+                }
+            ]
+        });
+        $("#date").datetimePicker({title: "选择日期", m: 1});
+        $("#ssx").cityPicker({
+            title: "选择省市县"
+        });
+
+
+    });
+</script>
+</body>
+</html>

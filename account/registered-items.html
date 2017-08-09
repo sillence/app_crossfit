@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>已报名项目</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <link rel="stylesheet" href="../assets/style/weui.css"/>
+    <link rel="stylesheet" href="../assets/style/weui2.css"/>
+    <link rel="stylesheet" href="../assets/style/weui3.css"/>
+    <link rel="stylesheet" href="../assets/style/jx-style.css"/>
+    <link rel="stylesheet" href="../assets/style/style.css"/>
+</head>
+<body ontouchstart class="page-bg">
+<div class="weui-header bg-white header-position-fixed">
+    <div class="weui-header-left"><a href="account.html" class="icon icon-109 icon-back"></a></div>
+    <h1 class="weui-header-title  f-black">已报名项目</h1>
+    <div class="weui_tab ui-tab weui-border-t" id="tab1">
+        <div class="weui_navbar bg-white">
+            <div class="weui_navbar_item ui-tab-item" id="1">
+                待付款
+            </div>
+            <div class="weui_navbar_item ui-tab-item" id="2">
+                报名成功
+            </div>
+            <div class="weui_navbar_item ui-tab-item" id="3">
+                已撤销
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content has-top-tab">
+    <div class="ui-tab-body" id="tab-item1">
+        <div class="jx_card registered-card-list">
+            <div class="card-content weui-border-tb">
+                <div class="card-content-inner">
+                    <div class="jx_media_hd">
+                        <img src="../assets/img/sport_logo.png" alt="">
+                    </div>
+                    <div class="jx_media_bd">
+                        <p class="title">项目名称</p>
+                        <p class="small_title">entry name</p>
+                        <p class="user-name">陈晨</p>
+                    </div>
+                    <span class="jx_media_ft"><span class="f-red2">等待开始</span></span>
+                </div>
+            </div>
+            <div class="card-footer ui-text-right">
+                <a href="javascript:;" class="jx_btn bg-blue2-b  weui_btn_inline">取消报名</a>
+                <a href="javascript:;" class="jx_btn weui_btn_blue  weui_btn_inline">付款</a>
+            </div>
+        </div>
+    </div>
+    <div class="ui-tab-body hide" id="tab-item2">
+        <div class="jx_card registered-card-list">
+            <div class="card-content weui-border-tb">
+                <div class="card-content-inner">
+                    <div class="jx_media_hd">
+                        <img src="../assets/img/sport_logo.png" alt="">
+                    </div>
+                    <div class="jx_media_bd">
+                        <p class="title">项目名称</p>
+                        <p class="small_title">entry name</p>
+                        <p class="user-name">陈晨</p>
+                    </div>
+                    <span class="jx_media_ft"><span class="f-green">支付成功</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui-tab-body hide" id="tab-item3">
+        <div class="jx_card registered-card-list">
+            <div class="card-content weui-border-tb">
+                <div class="card-content-inner">
+                    <div class="jx_media_hd">
+                        <img src="../assets/img/sport_logo.png" alt="">
+                    </div>
+                    <div class="jx_media_bd">
+                        <p class="title">项目名称</p>
+                        <p class="small_title">entry name</p>
+                        <p class="user-name">陈晨</p>
+                    </div>
+                    <span class="jx_media_ft"><span class="f-gray">已撤销</span></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="../assets/js/zepto.min.js"></script>
+<script src="../assets/javascripts/app.js"></script>
+
+<script>
+    $(function () {
+        $('#tab1').tab({defaultIndex: 0, activeClass: "tab-blue2"});
+        $(".ui-tab-item").click(function () {
+            var id = $(this).attr("id");
+            $(".ui-tab-body").addClass("hide");
+            $("#tab-item" + id).removeClass("hide");
+        })
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>视频链接</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <link rel="stylesheet" href="../assets/style/weui.css"/>
+    <link rel="stylesheet" href="../assets/style/weui2.css"/>
+    <link rel="stylesheet" href="../assets/style/weui3.css"/>
+    <link rel="stylesheet" href="../assets/style/jx-style.css"/>
+    <link rel="stylesheet" href="../assets/style/style.css"/>
+</head>
+<body ontouchstart class="page-bg">
+<div class="weui-header bg-white header-position-fixed">
+    <div class="weui-header-left"><a href="./ranking.html" class="icon icon-109 icon-back"></a></div>
+    <h1 class="weui-header-title  f-black">视频链接</h1>
+    <div class="weui-header-right"><a id="report-btn" href="javascript:;">举报</a></div>
+
+</div>
+<div class="content">
+    <div class="weui_cells_title">视频链接</div>
+    <div class="weui_cells weui_cells_access">
+        <a class="weui_cell " href="http://www.baidu.com">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>www.baidu.com</p>
+            </div>
+            <div class="weui_cell_ft"></div>
+        </a>
+    </div>
+</div>
+<div class="weui_msg_img hide" id="report">
+    <div class="weui_msg_com">
+        <div onclick="$('#report').fadeOut();" class="weui_msg_close"><i class="icon icon-95"></i></div>
+        <div class="weui_msg_src">
+            <div class="text" style="background: #ffffff;font-size: 1rem">
+                <form action="">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <div>举报对象:AA</div>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <div>赛事名称:Crossfit</div>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <div>项目名称:CR
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <div>举报原因:
+                            </div>
+                            <textarea id="textarea" class="weui_textarea" placeholder="请输入文本" rows="3"></textarea>
+                            <div class="weui_textarea_counter"><span id="count">0</span>/<span id="count_max">50</span></div>
+                        </div>
+                    </div>
+                    <div class="weui_cell ui-text-center">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input type="reset" value="取消" onclick="$('#report').fadeOut();"
+                                   class="jx_btn bg-blue2-b weui_btn_inline">
+                            <input type="submit" value="举报" onclick="$('#report').fadeOut();"
+                                   class="jx_btn weui_btn_blue weui_btn_inline">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/js/zepto.min.js"></script>
+<script src="../assets/javascripts/app.js"></script>
+
+<script>
+    $(function () {
+
+        $('#report-btn').click(function () {
+
+            $('#report').fadeIn();
+        })
+    })
+
+</script>
+</body>
+</html>

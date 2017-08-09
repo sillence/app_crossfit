@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>报名须知</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <link rel="stylesheet" href="../assets/style/weui.css"/>
+    <link rel="stylesheet" href="../assets/style/weui2.css"/>
+    <link rel="stylesheet" href="../assets/style/weui3.css"/>
+    <link rel="stylesheet" href="../assets/style/jx-style.css"/>
+    <link rel="stylesheet" href="../assets/style/style.css"/>
+</head>
+<body ontouchstart class="page-bg">
+<div class="weui-header bg-white header-position-fixed weui-border-b">
+    <div class="weui-header-left"><a href="../home.html" class="icon icon-109 f-black"></a></div>
+    <h1 class="weui-header-title  f-black">报名须知</h1>
+</div>
+<div class="content">
+    <div class="weui_article">
+        内容
+    </div>
+
+    <div class="weui_cells_tips">
+        <div class='jx_checkbox'>
+            <input type='checkbox' id='agree_checkbox' name='checkbox'>
+            <label for='agree_checkbox'>同意</label>
+        </div>
+    </div>
+    <div class="weui_btn_area">
+        <a href="./address/address-empty.html" id="agree_btn" class="jx_btn weui_btn_blue disabled">同意</a>
+    </div>
+    <div class="weui_cells_title" style="height:45px;">&nbsp;</div>
+</div>
+<script src="../assets/js/zepto.min.js"></script>
+<script src="../assets/js/picker.js"></script>
+<script src="../assets/javascripts/picker-city.js"></script>
+<script src="../assets/javascripts/picker-country.js"></script>
+<script src="../assets/javascripts/app.js"></script>
+<script>
+    $(function () {
+        $("#agree_checkbox").change(function () {
+            var disabled = $(this).prop("checked");
+            $("#agree_btn").toggleClass('disabled');
+        });
+        $("#agree_btn").click(function (e) {
+            if ($(this).hasClass("disabled")) {
+                e.preventDefault();
+            }
+        })
+
+    });
+</script>
+</body>
+</html>

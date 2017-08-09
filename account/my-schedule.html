@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>项目名称</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <link rel="stylesheet" href="../assets/style/weui.css"/>
+    <link rel="stylesheet" href="../assets/style/weui2.css"/>
+    <link rel="stylesheet" href="../assets/style/weui3.css"/>
+    <link rel="stylesheet" href="../assets/style/jx-style.css"/>
+    <link rel="stylesheet" href="../assets/style/style.css"/>
+</head>
+<body ontouchstart class="page-bg">
+<div class="weui-header bg-white header-position-fixed">
+    <div class="weui-header-left"><a href="account.html" class="icon icon-109 icon-back"></a></div>
+    <h1 class="weui-header-title  f-black">项目名称</h1>
+</div>
+<div class="content">
+    <div class="schedule-card-list">
+        <div class="jx_card  status_ing">
+            <div class="card-content">
+                <div class="card-content-inner">
+                    <div class="jx_media_bd">
+                        <p> 赛事名称：Crossfit</p>
+                        <p> 项目名称：Crossfit May</p>
+                        <p> 项目开始时间：2017.5.22</p>
+                        <p> 项目结束时间：2017.5.27</p>
+                    </div>
+                    <div class="jx_media_ft"><span class="f-white opacity-50">正在进行中</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="jx_card ">
+            <div class="card-content">
+                <div class="card-content-inner">
+                    <div class="jx_media_bd">
+                        <p> 赛事名称：Crossfit</p>
+                        <p> 项目名称：Crossfit May</p>
+                        <p> 项目开始时间：2017.5.22</p>
+                        <p> 项目结束时间：2017.5.27</p>
+                    </div>
+                    <div class="jx_media_ft"><span class="f-red2">等待开始</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="jx_card ">
+            <div class="card-content">
+                <div class="card-content-inner">
+                    <div class="jx_media_bd">
+                        <p> 赛事名称：Crossfit</p>
+                        <p> 项目名称：Crossfit May</p>
+                        <p> 项目开始时间：2017.5.22</p>
+                        <p> 项目结束时间：2017.5.27</p>
+                    </div>
+                    <div class="jx_media_ft"><span class="f-red2">等待开始</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/js/zepto.min.js"></script>
+<script src="../assets/javascripts/app.js"></script>
+
+<script>
+    $(function () {
+        $('#tab1').tab({defaultIndex: 0, activeClass: "tab-blue2"});
+        $(".ui-tab-item").click(function () {
+            var id = $(this).attr("id");
+            $(".ui-tab-body").addClass("hide");
+            $("#tab-item" + id).removeClass("hide");
+        })
+    })
+
+</script>
+</body>
+</html>

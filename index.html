@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Crossfit</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <link rel="stylesheet" href="./assets/style/weui.css"/>
+    <link rel="stylesheet" href="./assets/style/weui2.css"/>
+    <link rel="stylesheet" href="./assets/style/weui3.css"/>
+    <link rel="stylesheet" href="./assets/style/jx-style.css"/>
+    <link rel="stylesheet" href="./assets/style/style.css"/>
+
+</head>
+<body ontouchstart class="page-bg">
+<div class="weui-header bg-white header-position-fixed weui-border-b">
+    <h1 class="weui-header-title  f-black">Crossfit</h1>
+</div>
+<div class="content">
+    <img src="./assets/img/banner@2x.png" class="img-max">
+    <div class="weui_panel event-info">
+        <div class="weui_panel_hd ui-text-center jx_panel_title"><span class="jx-icon img_qi_left"></span>赛事信息<span
+                class="jx-icon img_qi_right"></span></div>
+        <div class="weui_panel_bd">
+            <div class="weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd">
+                    <img class="weui_media_appmsg_thumb"
+                         src="./assets/img/sport_logo.png" alt="">
+                </div>
+                <div class="weui_media_bd">
+                    <p class="title">赛事名称：地表强者</p>
+                    <p class="small_title">Event name: Crossfit</p>
+                    <p class="title">距离报名结束时间:</p>
+                    <p class="small_title">End of registration time:</p>
+                    <div class="count_down">倒计时：
+                        <span class="countdown"></span>
+                    </div>
+                </div>
+                <div class="weui_media_ft">
+                    <a href="./regist/registration.html" class="sign_up">
+                        <p>报名</p>
+                        <p>sign up</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sport_warp">
+        <div class="jx_card_title ui-text-center">
+            <p class="title">活动项目</p>
+            <p class="small_title">Event</p>
+        </div>
+        <div class="jx_card status_finish">
+            <a href="sports/sport.html" class="card-content">
+                <div class="card-content-inner">
+                    <div class="jx_media_hd">
+                        <img src="./assets/img/sport_logo.png" alt="">
+                    </div>
+                    <div class="jx_media_bd">
+                        <p class="title">项目名称</p>
+                        <p class="small_title">entry name</p>
+                    </div>
+                    <span class="jx_media_ft opacity-50">已结束</span>
+                </div>
+            </a>
+        </div>
+        <div class="jx_card status_ing">
+            <a href="sports/sport.html" class="card-content">
+                <div class="card-content-inner">
+                    <div class="jx_media_hd">
+                        <img src="./assets/img/sport_logo.png" alt="">
+                    </div>
+                    <div class="jx_media_bd">
+                        <p class="title">项目名称</p>
+                        <p class="small_title">entry name</p>
+                    </div>
+                    <span class="jx_media_ft opacity-50">正在进行中</span>
+                </div>
+            </a>
+        </div>
+        <div class="jx_card">
+            <a href="sports/sport.html" class="card-content">
+                <div class="card-content-inner">
+                    <div class="jx_media_hd">
+                        <img src="./assets/img/sport_logo.png" alt="">
+                    </div>
+                    <div class="jx_media_bd">
+                        <p class="title">项目名称</p>
+                        <p class="small_title">entry name</p>
+                    </div>
+                    <span class="jx_media_ft ">等待开始</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="jx_panel_warp">
+        <div class="weui_panel">
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a href="javascript:;" class="weui_cell" onclick="selectmenu('1');">
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>报名要求</p>
+                                <p class="small_title"> Registration requirements</p>
+                            </div>
+                            <span id="cell_1" class="icon icon-74 "></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="display: none;" id="menu_1">
+                <div class="weui_article">
+
+                    <ul class="ul_list_info" style="list-style-type: none">
+                        <li>
+                            <div class="label-control">
+                                <p>
+                                    开始报名时间：
+                                </p>
+                                <p>
+                                    Start registration time：
+                                </p>
+                            </div>
+                            <div class="">2017-4-20:10:10:10</div>
+                        </li>
+                        <li>
+                            <div class="label-control">
+                                <p>
+                                    报名截止时间：
+                                </p>
+                                <p>
+                                    Registration deadline：
+                                </p>
+                            </div>
+                            <div class="">2017-4-20:10:10:10</div>
+                        </li>
+                        <li>
+                            <div class="label-control">
+                                <p>
+                                    报名费用：
+                                </p>
+                                <p>
+                                    Registration fee:
+                                </p>
+                            </div>
+                            <div class="">1500元</div>
+                        </li>
+                        <li>
+                            <div class="label-control">
+                                <p>
+                                    参赛年龄要求：
+                                </p>
+                                <p>
+                                    Age requirement:
+                                </p>
+                            </div>
+                            <div class=""> 18~66</div>
+                        </li>
+
+                        <li>
+                            <div class="label-control">
+                                <p>
+                                    参赛年龄要求：
+                                </p>
+                                <p>
+                                    Age requirement:
+                                </p>
+                            </div>
+                            <div class=""> 18~66</div>
+                        </li>
+
+                        <li>
+                            <div class="label-control">
+                                <p>
+                                    性别限制：
+                                </p>
+                                <p>
+                                    Gender restriction:
+                                </p>
+                            </div>
+                            <div class=""> 男</div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="weui_panel">
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a href="javascript:;" class="weui_cell" onclick="selectmenu('2');">
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>赛事进度 </p>
+                                <p class="small_title">Race schedule</p>
+
+                            </div>
+                            <span id="cell_2" class="icon icon-74 "></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="display: none;" id="menu_2">
+                <div class="weui_article">
+                    <p>项目1： 2017-5-20 11:30:00~2017-5-27 11:30:00</p>
+                    <p>项目1： 2017-5-20 11:30:00~2017-5-27 11:30:00</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="weui_panel">
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a href="javascript:;" class="weui_cell" onclick="selectmenu('3');">
+
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>参赛规则</p>
+                                <p class="small_title"> Rules of competition</p>
+                            </div>
+                            <span id="cell_3" class="icon icon-74 "></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: none;" id="menu_3">
+                <div class="weui_article">测试文字,我是你们的好朋友</div>
+            </div>
+        </div>
+        <div class="weui_panel">
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a href="javascript:;" class="weui_cell" onclick="selectmenu('4');">
+
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>参赛要求</p>
+                                <p class="small_title"> Entry Requirements </p>
+
+                            </div>
+                            <span id="cell_4" class="icon icon-74 "></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="display: none;" id="menu_4">
+                <div class="weui_article">测试文字,我是你们的好朋友</div>
+            </div>
+        </div>
+        <div class="weui_panel">
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a href="javascript:;" class="weui_cell" onclick="selectmenu('5');">
+
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>奖励处罚办法 </p>
+                                <p class="small_title"> Measures for reward and punishment</p>
+
+                            </div>
+                            <span id="cell_5" class="icon icon-74 "></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="display: none;" id="menu_5">
+                <div class="weui_article">测试文字,我是你们的好朋友</div>
+            </div>
+        </div>
+        <div class="weui_panel">
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a href="javascript:;" class="weui_cell" onclick="selectmenu('6');">
+
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>更多信息</p>
+                                <p class="small_title"> Further information </p>
+
+                            </div>
+                            <span id="cell_6" class="icon icon-74 "></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="display: none;" id="menu_6">
+                <div class="weui_article">测试文字,我是你们的好朋友</div>
+            </div>
+        </div>
+    </div>
+    <div class="trademark weui_panel">
+        <div class="weui_panel_hd ui-text-center f-black">主办方</div>
+        <div class="weui_panel_bd">
+            <div class="box-flex-warp">
+                <div class="box-flex">
+                    <img src="./assets/img/banner@2x.png" alt="">
+                </div>
+                <div class="box-flex">
+                    <img src="./assets/img/sport_logo.png" alt="">
+                </div>
+                <div class="box-flex">
+                    <img src="./assets/img/baidu.png" alt="">
+                </div>
+                <div class="box-flex">
+                    <img src="./assets/img/sport_logo.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="weui_cells_title" style="height:45px;">&nbsp;</div>
+<div class="tab-bottom jx-tab-bottom">
+    <div class="weui_tabbar ">
+        <a href="#" class="weui_tabbar_item weui_bar_item_on">
+            <div class="weui_tabbar_icon">
+                <img src="./assets/img/icon_tab_match_normal@2x.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">赛事</p>
+            <p class="weui_tabbar_label">Match</p>
+        </a>
+        <a href="ranking/ranking.html" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="./assets/img/icon_tab_Ranking_pressed@2x.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">排行</p>
+            <p class="weui_tabbar_label">Ranking</p>
+        </a>
+
+        <a href="./resuits/resuits.html" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="./assets/img/icon_tab_upload_pressed@2x.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">成绩上传</p>
+            <p class="weui_tabbar_label">Upload resuits</p>
+        </a>
+        <a href="./account/account.html" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="./assets/img/icon_tab_mine_pressed@2x.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">个人</p>
+            <p class="weui_tabbar_label">Personal</p>
+        </a>
+    </div>
+</div>
+<div class="weui-share" onclick="$(this).fadeOut();$(this).removeClass('fadeOut')">
+    <div class="weui-share-box">
+        点击右上角发送给指定朋友或分享到朋友圈 <i></i>
+    </div>
+</div>
+<script src="./assets/js/zepto.min.js"></script>
+<script src="./assets/javascripts/app.js"></script>
+
+<script>
+
+    var t = 110036;//秒数
+    showtime();
+    setInterval("showtime()", 1000);
+
+</script>
+</body>
+</html>

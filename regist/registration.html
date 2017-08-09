@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>填写报名信息</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <link rel="stylesheet" href="../assets/style/weui.css"/>
+    <link rel="stylesheet" href="../assets/style/weui2.css"/>
+    <link rel="stylesheet" href="../assets/style/weui3.css"/>
+    <link rel="stylesheet" href="../assets/style/jx-style.css"/>
+    <link rel="stylesheet" href="../assets/style/style.css"/>
+</head>
+<body ontouchstart class="page-bg">
+<div class="weui-header bg-white header-position-fixed weui-border-b">
+    <div class="weui-header-left"><a href="../home.html" class="icon icon-109 f-black"></a></div>
+    <h1 class="weui-header-title  f-black">填写报名信息</h1>
+</div>
+<div class="content">
+    <form id="form" class="register-form">
+        <div class="weui_cells_title">基础信息</div>
+        <div class="weui_cells weui_cells_form">
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>姓名/name:</p>
+                    <input class="weui_input" type="text" value="" placeholder="请输入姓名"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>证件类型/Document type:</p>
+                    <input class="weui_input" type="text" value="" placeholder="请选择证件类型" id='text5'/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>证件号码/Identification Number:</p>
+                    <input class="weui_input" placeholder="请输入证件号" type="text">
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>性别/Gender:</p>
+                    <input class="weui_input" type="text" placeholder="请选择性别" value="" id='text2'/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>出生日期:</p>
+                    <input class="weui_input" type="text" placeholder="请选择出生日期" id='date'/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>所在国家/Host country:</p>
+                    <input class="weui_input" type="text" placeholder="请选择所在国家" value="" id='text3'/>
+                </div>
+            </div>
+        </div>
+        <div class="weui_cells_title">穿着尺码</div>
+        <div class="weui_cells weui_cells_form ">
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>鞋码/Shoe size:</p>
+                    <input class="weui_input" type="text" placeholder="请选择鞋码" value="" id='text6'/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>衣码/Dress code:</p>
+                    <input class="weui_input" type="text" placeholder="请选择衣码" value="" id='text7'/>
+                </div>
+            </div>
+        </div>
+        <div class="weui_cells_title">隶属场馆 Subordinate venues</div>
+        <div class="weui_cells weui_cells_access">
+            <a class="weui_cell weui_media_box" id="ms4" href="javascript:;">
+                <div class="weui_cell_bd  weui_cell_primary">
+                    <p>场馆/Venue</p>
+                </div>
+                <div id="venue" class="weui_cell_ft">请选择</div>
+            </a>
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>没找到场馆？手动输入</p>
+                    <input class="weui_input" placeholder="请输入场馆" type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="weui_cells_tips">提交即视为同意 <a class="f-red" href="./registerAgreement.html">《参赛协议》</a></div>
+        <div class="weui_btn_area">
+            <a href="./address/address-empty.html" class="jx_btn weui_btn_blue">提交报名资料</a>
+        </div>
+        <div class="weui_cells_title" style="height:45px;">&nbsp;</div>
+    </form>
+</div>
+
+<div class="weui_msg_img hide" id="msg4">
+    <div class="weui_msg_com">
+        <!--<div data-type="close" class="weui_msg_close close-msg"><i class="icon icon-95"></i></div>-->
+        <div class="weui_msg_src">
+            <div class="text" style="background: #ffffff;font-size: 1rem;">
+                <div class="weui_search_bar">
+                    <input type="search" class="search-input" id='search' placeholder='关键字'
+                           style="box-sizing:content-box"/>
+                    <button class="jx_btn weui_btn_blue jx_btn_mini"><i class="icon icon-4"></i></button>
+                </div>
+                <form action="" class="venue-list">
+
+                    <a href="" class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            场馆1
+                        </div>
+                    </a>
+                    <a href="" class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            场馆1
+                        </div>
+                    </a>
+                    <a href="" class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            场馆1
+                        </div>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/js/zepto.min.js"></script>
+<script src="../assets/js/picker.js"></script>
+<script src="../assets/javascripts/picker-city.js"></script>
+<script src="../assets/javascripts/picker-country.js"></script>
+<script src="../assets/javascripts/app.js"></script>
+<script>
+    $(function () {
+        $(".weui_msg_src").click(function () {
+            return false;
+        })
+        $('#msg4').click(function () {
+            $('#msg4').fadeOut();
+            $('body').removeClass('body-fixed')
+        })
+        $('#ms4').click(function () {
+            $('#msg4').fadeIn();
+            $('body').addClass('body-fixed')
+        });
+        //选择场馆
+        $('.venue-list .weui_cell').click(function () {
+
+            $("#venue").text($(this).find(".weui_cell_bd").text());
+            $('#msg4').fadeOut();
+            $('body').removeClass('body-fixed')
+        });
+
+        $("#text2").picker({
+            title: "性别",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['男', '女'],
+                    displayValues: ['男', '女'],
+                }
+            ]
+        });
+
+        $("#text4").picker({
+            title: "血型",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['A型', 'B型'],
+                    displayValues: ['A型', 'B型'],
+                }
+            ]
+        });
+        $("#text5").picker({
+            title: "证件类型",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['身份证', '护照'],
+                    displayValues: ['身份证', '护照'],
+                }
+            ]
+        });
+        $("#text6").picker({
+            title: "衣码",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['160', '170'],
+                    displayValues: ['160', '170'],
+                }
+            ]
+        });
+        $("#text7").picker({
+            title: "裤码",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['160', '170'],
+                    displayValues: ['160', '170'],
+                }
+            ]
+        });
+        $("#text8").picker({
+            title: "鞋码",
+            toolbarCloseText: '确定',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['39', '40'],
+                    displayValues: ['39', '40'],
+                }
+            ]
+        });
+        $("#date").datetimePicker({title: "选择日期", m: 1});
+        $("#ssx").cityPicker({
+            title: "选择省市县"
+        });
+    });
+</script>
+</body>
+</html>

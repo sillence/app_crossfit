@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>项目详情</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <link rel="stylesheet" href="../assets/style/weui.css"/>
+    <link rel="stylesheet" href="../assets/style/weui2.css"/>
+    <link rel="stylesheet" href="../assets/style/weui3.css"/>
+    <link rel="stylesheet" href="../assets/style/jx-style.css"/>
+    <link rel="stylesheet" href="../assets/style/style.css"/>
+
+</head>
+<body ontouchstart class="page-bg">
+<div class="weui-header bg-white header-position-fixed weui-border-b">
+    <div class="weui-header-left"><a href="../home.html" class="icon icon-109 icon-back"></a></div>
+    <h1 class="weui-header-title  f-black">项目详情</h1>
+</div>
+<div class="content">
+    <!--视频-->
+    <div class="ui-text-center" style="font-size: 0">
+        <iframe id="video_iframe" style="width: 100%" frameborder="0"
+                src="https://v.qq.com/iframe/player.html?vid=l05175uv9cr&tiny=0&auto=0"
+                allowfullscreen></iframe>
+    </div>
+    <!--end 视频-->
+    <div class="sport-info">
+        <div class="title_warp">
+            <p class="xbig_title">地表强者</p>
+            <p class="title">crossfit</p>
+            <div class="sport-status">
+                <div class="sport-inner">
+                    <p class="big_title">正在进行</p>
+                    <p class="small_title">In progress</p>
+                </div>
+            </div>
+        </div>
+        <div class="count_down_warp weui-border-b">
+            <div class="left">
+                <p class="big_title">距离开赛时间：</p>
+                <p class="small_title"> Distance start time</p>
+            </div>
+            <div class="count_down">
+                <span class="countdown"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="jx-cells weui_cells_title">视频内容要求 Video content requirements</div>
+    <div class="jx-cells weui_cells">
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>完成100个俯卧撑</p>
+            </div>
+        </div>
+    </div>
+    <div class="jx-cells weui_cells_title">成绩参数</div>
+    <div class="jx-cells weui_cells">
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>第一参数：</p>
+                <p>第一参数介绍</p>
+                <br>
+                <p>第二参数：</p>
+                <p>第二参数介绍</p>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/js/zepto.min.js"></script>
+<script src="../assets/javascripts/app.js"></script>
+
+<script>
+    var t = 1100;//秒数
+    showtime();
+    setInterval("showtime()", 1000);
+
+</script>
+<script>
+    document.getElementById("video_iframe").style.height = (document.body.clientWidth * 498 / 640) + 'px';
+</script>
+</body>
+</html>
